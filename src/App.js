@@ -1,6 +1,7 @@
 import './App.css';
 import Particles from './components/Particles';
 import LogoLoop from './components/LogoLoop';
+import TokyoModel from './components/TokyoModel';
 import myPhoto from './components/my-photo.jpg';
 import logo1 from './components/Screenshot 2025-12-10 010010.png';
 import logo2 from './components/Screenshot 2025-12-10 010018.png';
@@ -22,6 +23,12 @@ import awsLogo from './components/aws.png';
 import figmaLogo from './components/figma.png';
 import mlflowLogo from './components/mlflow.png';
 import tailwindLogo from './components/tailwindcss.png';
+import ieeeGujratLogo from './components/ieee gujrat section.png';
+import ieeeLogo from './components/ieee logo.jpg';
+import gfgLogo from './components/gfg logo.jpg';
+import tedxLogo from './components/tedx logo.png';
+import eindiaLogo from './components/eindia logo.jpg';
+import vishwamanthanLogo from './components/vishwamanthan logo.jpg';
 
 function App() {
   return (
@@ -32,6 +39,7 @@ function App() {
           <li><a href="#home">About</a></li>
           <li><a href="#internship">Internship</a></li>
           <li><a href="#skills">Skills</a></li>
+          <li><a href="#communities">Communities</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -276,6 +284,95 @@ scalable applications.
             fadeOutColor="#ffffff"
             ariaLabel="Technology logos"
           />
+        </div>
+      </section>
+
+      {/* 3D Model Section */}
+      <TokyoModel />
+
+      {/* Communities Section */}
+      <section id="communities" className="communities-section">
+        <h2 className="section-title">Communities I Work With</h2>
+        <p className="communities-subtitle">Proud to be part of these amazing organizations driving innovation and impact</p>
+        
+        <div className="communities-container">
+          <div className="community-card">
+            <div className="community-logo">
+              <img src={ieeeLogo} alt="IEEE" />
+            </div>
+            <div className="community-content">
+              <h3 className="community-name">IEEE</h3>
+              <span className="community-role">Leadership & Technical Contributions</span>
+              <p className="community-description">
+                Held leadership and technical responsibilities across multiple IEEE societies. Served as <strong>Secretary</strong> for the Computer Intelligence Society, supporting coordination, documentation, and chapter operations. Additionally worked as <strong>Webmaster</strong> for IEEE GRSS and IEEE Communications Society, managing digital platforms and ensuring effective technical outreach and communication.
+              </p>
+            </div>
+          </div>
+
+          <div className="community-card">
+            <div className="community-logo">
+              <img src={ieeeGujratLogo} alt="IEEE Signal Processing Society – Gujarat Section" />
+            </div>
+            <div className="community-content">
+              <h3 className="community-name">IEEE Signal Processing Society – Gujarat Section</h3>
+              <span className="community-role">Research & Machine Learning Intern</span>
+              <p className="community-description">
+                Completed an internship developing a machine learning model supported by <strong>MLOps practices</strong>. Worked on building reproducible ML pipelines, experiment tracking, model evaluation, and lifecycle management, gaining hands-on experience in applied machine learning and research-oriented development.
+              </p>
+            </div>
+          </div>
+
+          <div className="community-card">
+            <div className="community-logo">
+              <img src={gfgLogo} alt="GeeksforGeeks" />
+            </div>
+            <div className="community-content">
+              <h3 className="community-name">GeeksforGeeks</h3>
+              <span className="community-role">Public Relations Officer</span>
+              <p className="community-description">
+                Served as the Public Relations Officer with primary responsibility for <strong>sponsor outreach</strong>, coordination, and relationship management. Played a key role in securing sponsorships, managing communications with partners, and supporting the smooth execution of technical events and community initiatives.
+              </p>
+            </div>
+          </div>
+
+          <div className="community-card">
+            <div className="community-logo">
+              <img src={tedxLogo} alt="TEDx" />
+            </div>
+            <div className="community-content">
+              <h3 className="community-name">TEDx</h3>
+              <span className="community-role">Curator</span>
+              <p className="community-description">
+                Worked as a Curator, responsible for <strong>identifying speakers</strong> and curating their talks. Collaborated closely with speakers to shape narratives, refine content, and ensure alignment with the event theme while maintaining originality, clarity, and impact.
+              </p>
+            </div>
+          </div>
+
+          <div className="community-card">
+            <div className="community-logo">
+              <img src={eindiaLogo} alt="Engineering India" />
+            </div>
+            <div className="community-content">
+              <h3 className="community-name">Engineering India (E-India)</h3>
+              <span className="community-role">Community Contributor</span>
+              <p className="community-description">
+                Contributed to Engineering India initiatives focused on <strong>student engagement</strong>, technical awareness, and professional development. Supported outreach activities and knowledge-sharing efforts aimed at strengthening engineering education and innovation culture.
+              </p>
+            </div>
+          </div>
+
+          <div className="community-card">
+            <div className="community-logo">
+              <img src={vishwamanthanLogo} alt="Vishwamanthan Research Foundation" />
+            </div>
+            <div className="community-content">
+              <h3 className="community-name">Vishwamanthan Research Foundation</h3>
+              <span className="community-role">Research Contributor</span>
+              <p className="community-description">
+                Played a significant role in the <strong>initial evaluation and screening</strong> of research papers, assisting in content validation and quality assessment. Supported early-stage research review processes to ensure academic rigor, relevance, and structured evaluation of submissions.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
